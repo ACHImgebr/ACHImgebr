@@ -1,171 +1,196 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-    <meta charset="utf-8">
-    <title>M A R I S O</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-    Style.css
-    @charset "utf-8";
-    /* CSS Document */
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/*
+        Inspired in https://avicoder.me/
+      */
+      @import 'https://fonts.googleapis.com/css?family=Bree+Serif';
+      
+      body {
+       background-color: #fefefe;
+       font-family: 'Bree Serif', serif;
+      }
+      
+      h1 {
+        animation: glitch 3s steps(100) infinite;
+        color: #151515;
+        font-size: 3em;
+        text-align: center;
+      }
+      
+      @media (min-width: 480px) {
+        h1 {
+          font-size: 6em;
+        }
+      }
+      
+      @keyframes glitch { 
+        0% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+        1% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+        2% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+        3% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+        4% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+        5% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+        6% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+        7% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+        8% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+        9% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+        10% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+        11% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+        12% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+        13% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+        14% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+        15% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+        16% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+        17% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+        18% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+        19% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+        20% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+        21% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+        22% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+        23% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+        24% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+        25% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+        26% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0.5px);}
+        27% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0.5px);}
+        28% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+        29% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+        30% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+        31% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+        32% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+        33% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+        34% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+        35% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
+        36% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
+        37% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
+        38% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+        39% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+        40% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+        41% { text-shadow: 45px 0 0 #0c33f5, -45px 0 0 lime; filter: blur(0);}
+        42% { text-shadow: 0 0 0 #0c33f5, 0 0 0 lime; filter: blur(0);}
+        43% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+        44% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+        45% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+        46% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+        47% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0.5px);}
+        48% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+        49% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+        50% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+        51% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+        52% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+        53% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+        54% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+        55% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0.5px);}
+        56% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0.5px);}
+        57% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0.5px);}
+        58% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+        59% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+        60% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+        61% { text-shadow: 30px 0 0 red, -30px 0 0 lime; filter: blur(0);}
+        62% { text-shadow: 0 0 0 red, 0 0 0 lime; filter: blur(0);}
+        63% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
+        64% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
+        65% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
+        66% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0.5px);}
+        67% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0.5px);}
+        68% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+        69% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+        70% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+        71% { text-shadow: 50px 0 0 red, -50px 0 0 #0c33f5; filter: blur(0);}
+        72% { text-shadow: 0 0 0 red, 0 0 0 #0c33f5; filter: blur(0);}
+        73% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+        74% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+        75% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+        76% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+        77% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+        78% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+        79% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+        80% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+        81% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+        82% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+        83% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+        84% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+        85% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+        86% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0.5px);}
+        87% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0.5px);}
+        88% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+        89% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+        90% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+        91% { text-shadow: 60px 0 0 lime, -60px 0 0 #0c33f5; filter: blur(0);}
+        92% { text-shadow: 0 0 0 lime, 0 0 0 #0c33f5; filter: blur(0);}
+        92% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+        93% { text-shadow: 0.8px 0 0 #d6d8df, -0.8px 0 0 lime; filter: blur(0);}
+        94% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+        95% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+        96% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+        97% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+        98% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+        99% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+        100% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);} }
+        
+        body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: #003;
+}
 
-    body{ background:rgb(190, 162, 162); margin-top:0;}
-
-    div {border: 1px solid #333; margin:5px;}
-
-    .header {
-    width:1080px; 
-    height:120px; 
-    margin:auto;
-    background-image:url(header.png);
-    background-color: #333;}
-
-    .horizontalMenu { 
-    width:1080px;
-    min-height:30px;
-    margin:auto;
-    margin-top:5px; 
-    background:#999;
-     }
-
-    .horizontalMenu ul {
-    list-style:none; 
-    margin: 0;
-    padding:0;
-    margin-top:5px;
-    }
-
-    .horizontalMenu ul li {float:left;}
-
-    .horizontalMenu ul li a {padding:5px;}
-
-    .body {width:1080px;
-    min-height:400px;
-    background-color:#FFF;
-    margin:auto;
-    margin-top:5px;}
-
-    .left {
-    float:left;
-    width:100px;
-    min-height:100px;
-     }
-
-    .home {
-     margin-left:160px; margin-right:170px;
-     }
-
-    .right {
-     float:right; width:100px; min-height:100px;
-     }
-
-    .footer {
-     width:1080px;
-     background-color:#039;
-     margin:auto;
-     margin-top:5px;
-     text-align:center; }
-
-     h1{text-align: center;}
-     h1{color: rgb(30, 42, 146);}
-     h3{text-align: center;}
-     h3{color: beige;}
-
-     h4{text-align: center;}
-     h6{text-align: center;}
-
-     div{background-color: burlywood;}
-
-     body{background-color: rgb(152, 133, 204);}
-
-     
-
-
-     <script src="https://embed.github.com/view/3d/<username>/<repo>/<ref>/<path_to_file>"></script>
-     
-    </style>
-    </head>
-    
-    <body>
-
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354l-1.5 1.5ZM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A23.825 23.825 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a8.827 8.827 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3Z"/>
-</svg>
-<i class="bi bi-yin-yang"></i>
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-yin-yang" viewBox="0 0 16 16">
-  <path d="M9.167 4.5a1.167 1.167 0 1 1-2.334 0 1.167 1.167 0 0 1 2.334 0Z"/>
-  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM1 8a7 7 0 0 1 7-7 3.5 3.5 0 1 1 0 7 3.5 3.5 0 1 0 0 7 7 7 0 0 1-7-7Zm7 4.667a1.167 1.167 0 1 1 0-2.334 1.167 1.167 0 0 1 0 2.334Z"/>
-</svg>
-
-
-
-        <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
-  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
-</picture>
-
-## About me
-
-Hi, I'm Mona. You might recognize me as GitHub's mascot.
-
-<details>
-<summary>My top THINGS-TO-RANK</summary>
-
-YOUR TABLE
-
-</details>
-
-<details open>
-<summary>My top THINGS-TO-RANK</summary>
-
-YOUR TABLE
-
-</details>
-
-<details>
-<summary>My top languages</summary>
-
-| Rank | Languages |
-|-----:|-----------|
-|     1| Javascript|
-|     2| Python    |
-|     3| SQL       |
+svg {
+  max-width: 80vmin;
   
-</details>
+  &:hover .textcircle {
+    transform: scale(1.2) rotate(90deg);
+  }
+}
 
-    <div class="header"> <h1>მ ა რ ი ს ო</h1> <h3>M a R i S o</h3></div>
+.textcircle {
+  transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+  transform-origin: 250px 250px;
+}
 
-    <div class="horizontalMenu">
-    <ul>
-    <li> <a href="123">HOME </a></li>
-    <li> <a href="123">ABOUT WEB</a></li>
-    <li> <a href="123">CONTACT </a></li>
-    </ul>
-    </div>
+text {
+  font-size: 22px;
+  font-family: Roboto;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-variant-ligatures: none;
+  fill: white;
+  letter-spacing: 6px;
+  animation: rotate 25s linear infinite;
+  transform-origin: 250px 250px;
+}
 
-    <div class="body">
-        
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+        </style>
+</head>
+<body>
+    <h1>ა ჩ ი</h1>
 
+    <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+        <title>Circular Text Path</title>
+        <defs>
+          <path id="textcircle" d="M250,400
+                       a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate(12,250,250)" />
+        </defs>
+        <g class="textcircle">
+          <text textLength="942">
+            <textPath 
+                      xlink:href="#textcircle" 
+                      aria-label="CSS & SVG are awesome" 
+                      textLength="942">
+              101010011001001101001001110101001111001
+            </textPath>
+          </text>
+        </g>
+      </svg>
 
-    <div class="left"> <h6>კოლექციები</h6>
-    </div>
-
-    <div class="right"> <h6>პროდუქტები</h6> </div>
-
-    <div class="home"> <h1>აღწერა</h1> <h4>მარისო არის ხელნაკეთი სამკაულების ონლაინ მაღაზია</4> </div>
-
-
-    </div>
-
-    <div class="footer"> M a r I § A c h I </div>
-
-    <div class="footer">
-
-        
-        
-    </div>
-
-    </body>
-    </html>
-    
+</body>
+</html>
